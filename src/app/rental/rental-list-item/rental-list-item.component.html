@@ -1,0 +1,12 @@
+<div class="card image-header">
+  <div class="card-header fg-white" [ngStyle]="{'background-image':'url('+rental.image+')'}">
+    {{ rental.title }}
+  </div>
+  <div class="card-content p-2">
+    <p class="fg-gray text-upper">Whole {{rental.category}} &#183; {{rental.city}}</p>
+    <span class="fg-dark"><strong>{{rental.dailyRate | currency }}</strong> per night &#183; Free Cancelation</span>
+  </div>
+  <div class="card-footer">
+    <a class="button primary" routerLink="/rentals/{{rental.id}}">More Info</a>
+  </div>
+</div>
