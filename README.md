@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. Dont forget to config the environment api variable to the correct backend server address on angular environment.
 Example:
+
 [/src/environments/environment.ts](https://github.com/bruno-lombardi/booking-angular/blob/master/src/environments/environment.ts)
 ```
 export const environment = {
@@ -16,6 +17,7 @@ export const environment = {
 ```
 Run `npm run dev` inside /server folder for backend server. By default server is loaded on port 3000. The backend server will be required for app to work. Don't forget to config .env file for the server, the required fields are below.
 Example:
+
 `/server/.env`
 ```
 NODE_ENV=development
@@ -23,7 +25,7 @@ DB_URI=mongodb://localhost:27017/booking
 DB_TEST_URI=mongodb://localhost:27017/booking_test
 JWT_SECRET=YOUR_SECRET
 ## JWT_EXPIRATION should be in the format {amount:number}{time_unit:letter}. For example, 22h, 1d, 3440m, 1Y
-## The letter should be according to momentjs .add() shorthand [here](http://momentjs.com/docs/#/manipulating/add/)
+## The letter should be according to momentjs .add() shorthand in http://momentjs.com/docs/#/manipulating/add/
 JWT_EXPIRATION=1h
 ```
 
