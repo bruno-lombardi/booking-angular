@@ -61,6 +61,7 @@ router.post('/auth/login', async (req, res) => {
 })
 
 router.get('/rental', RentalController.all)
+router.get('/rental/:id', RentalController.find)
 router.post('/rental', RentalController.create)
 
 module.exports = router;
