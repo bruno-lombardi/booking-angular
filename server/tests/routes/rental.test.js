@@ -28,7 +28,7 @@ describe('Tests rental routes', () => {
       })
   })
 
-  test('POST /api/v1/rental/create with valid data should create and return a rental', () => {
+  test('POST /api/v1/rental with valid data should create and return a rental', () => {
     const rental = RentalSeed.rentals[0]
 
     return request(app)
