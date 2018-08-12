@@ -21,10 +21,11 @@ Example:
 `/server/.env`
 ```
 NODE_ENV=development
-DB_URI=mongodb://localhost:27017/booking
+DB_URI=mongodb://localhost:27017/booking ## Example MongoDB URI
 DB_TEST_URI=mongodb://localhost:27017/booking_test
 JWT_SECRET=YOUR_SECRET
-## JWT_EXPIRATION should be in the format {amount:number}{time_unit:letter}. For example, 22h, 1d, 3440m, 1Y
+## JWT_EXPIRATION should be in the format {amount:number}{time_unit:letter}
+## For example, 24h (24 hours), 1d (1 day), 3440m (3440 minutes), 1y (1 year)
 ## The letter should be according to momentjs .add() shorthand in http://momentjs.com/docs/#/manipulating/add/
 JWT_EXPIRATION=1h
 ```
